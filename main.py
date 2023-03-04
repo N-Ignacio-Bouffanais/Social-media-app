@@ -1,7 +1,5 @@
-from fastapi import FastAPI
+import uvicorn
 
-app = FastAPI(
-    title="Social media app with fast API",
-    description="This is going to be a social media app project with Fast API and reactjs",
-    version="1.0.0",
-)
+
+if __name__ == "__main__":
+    uvicorn.run("app.api:app", host="0.0.0.0", port=8000, reload=True)

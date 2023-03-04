@@ -10,5 +10,3 @@ app = FastAPI(
         "email": "nicolas.bouffanais.1999@gmail.com",
     },
 )
-
-
