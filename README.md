@@ -1,5 +1,5 @@
 # FastAPI Social media application
-- This going to be the backend of the application made with FastAPI.
+- This is gonna be a social media app build with FastAPI for the backend and React with TypesScript for the frontend.
 
 ## Technologies that I used
 
@@ -8,6 +8,8 @@
 - PostgreSQL
 - Conda
 - Swagguer documentation
+- React -TypeScript
+- Tailwind CSS
 
 ## Author
 
