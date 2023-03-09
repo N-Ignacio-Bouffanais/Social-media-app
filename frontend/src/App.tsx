@@ -9,12 +9,12 @@ import AcountConfig from './pages/AcountConfig'
 
 function App() {
 
-  const loggedIn:boolean = false;
+  const loggedIn: boolean = false;
   return (
     <BrowserRouter>
-      <Navbar/>
+      <Navbar />
       <Routes>
-        <Route index element={<LandingPage/>}/>
+        <Route index element={<LandingPage />} />
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Register />} />
         <Route path='/config' element={loggedIn ? (
