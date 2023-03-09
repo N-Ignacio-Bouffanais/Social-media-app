@@ -5,11 +5,12 @@ import Login from './pages/Login'
 import Profile from './pages/Profile'
 import Register from './pages/Register'
 import AcountConfig from './pages/AcountConfig'
+import Home from './pages/Home'
 
 
 function App() {
 
-  const loggedIn: boolean = false;
+  const loggedIn: boolean = true;
   return (
     <BrowserRouter>
       <Navbar />
@@ -24,6 +25,11 @@ function App() {
         )} />
         <Route path='/profile' element={loggedIn ? (
           <Profile />
+        ) : (
+          <Navigate replace to={"/"} />
+        )} />
+        <Route path='/home' element={loggedIn ? (
+          <Home />
         ) : (
           <Navigate replace to={"/"} />
         )} />
