@@ -1,11 +1,12 @@
-import Form from "../components/Form"
+import { Fragment } from "react"
+import Form from "../components/RegisterForm"
 
 function Register() {
   return (
-    <div>
-        <h1>Register</h1>
-        <Form/>
-    </div>
+    <Fragment>
+      <h1 className="text-2xl text-center py-4">Register</h1>
+      <Form />
+    </Fragment>
   )
 }
 
