@@ -24,11 +24,6 @@ function App() {
         ) : (
           <Navigate replace to={"/"} />
         )} />
-        <Route path='/profile' element={loggedIn ? (
-          <Profile />
-        ) : (
-          <Navigate replace to={"/"} />
-        )} />
         <Route path='/home' element={loggedIn ? (
           <Home />
         ) : (
@@ -36,6 +31,11 @@ function App() {
         )} />
         <Route path='/friends' element={loggedIn ? (
           <Friends />
+        ) : (
+          <Navigate replace to={"/"} />
+        )} />
+        <Route path='/profile' element={loggedIn ? (
+          <Profile />
         ) : (
           <Navigate replace to={"/"} />
         )} />
