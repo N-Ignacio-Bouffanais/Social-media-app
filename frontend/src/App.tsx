@@ -6,6 +6,7 @@ import Profile from './pages/Profile'
 import Register from './pages/Register'
 import AcountConfig from './pages/AcountConfig'
 import Home from './pages/Home'
+import Friends from './pages/Friends'
 
 
 function App() {
@@ -30,6 +31,11 @@ function App() {
         )} />
         <Route path='/home' element={loggedIn ? (
           <Home />
+        ) : (
+          <Navigate replace to={"/"} />
+        )} />
+        <Route path='/friends' element={loggedIn ? (
+          <Friends />
         ) : (
           <Navigate replace to={"/"} />
         )} />
